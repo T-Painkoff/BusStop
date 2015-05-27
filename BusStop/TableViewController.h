@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BusStop : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface TableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property NSArray *busStop;
 
 @property (weak,nonatomic) IBOutlet UITableView *busStopTableView;

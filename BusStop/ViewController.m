@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <MapKit/MapKit.h>
+#import "TableViewController.h"
 
 @interface ViewController () <MKMapViewDelegate>
 
@@ -31,6 +32,17 @@
 
 
 
+}
+
+-(void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+
+}
+
+- (IBAction)segmentedControlTapped:(id)sender {
+    UISegmentedControl *seg = sender;
+    if (seg.selectedSegmentIndex == 1) {
+        [self performSegueWithIdentifier:@"segueList" sender:self];
+    }
 }
 
 

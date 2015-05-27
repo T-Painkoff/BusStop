@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Travis . All rights reserved.
 //
 
-#import "BusStop.h"
+#import "TableViewController.h"
 
 
 
-@implementation BusStop
+@implementation TableViewController
 
 
 -(void)viewDidLoad {
@@ -23,7 +23,7 @@
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         NSDictionary *stopInfo = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&connectionError];
 
-        self.busStop = [stopInfo objectForKey:@"results"];
+        self.busStop = [stopInfo objectForKey:@"row"];
 
         [self.busStopTableView reloadData];
     }];
@@ -39,8 +39,8 @@
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"busCell"];
-                             NSDictionary *stopInfo = [self.busStop objectAtIndex:indexPath.row];
-                             cell.textLabel.text = [stopInfo objectForKey:@"name"];
+    NSDictionary *stop = [self.busStop objectAtIndex:indexPath.row];
+    cell.textLabel.text = [stop objectForKey:@"cta_stop_name"];
 
     return cell;
 }
