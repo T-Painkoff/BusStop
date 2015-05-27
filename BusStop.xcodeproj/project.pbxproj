@@ -14,6 +14,7 @@
 		1FA8AAF81B16490D00276AB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FA8AAF71B16490D00276AB7 /* Images.xcassets */; };
 		1FA8AAFB1B16490D00276AB7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA8AAF91B16490D00276AB7 /* LaunchScreen.xib */; };
 		1FA8AB071B16490D00276AB7 /* BusStopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8AB061B16490D00276AB7 /* BusStopTests.m */; };
+		1FA8AB121B164C6B00276AB7 /* BusStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8AB111B164C6B00276AB7 /* BusStop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		1FA8AB001B16490D00276AB7 /* BusStopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusStopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA8AB051B16490D00276AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FA8AB061B16490D00276AB7 /* BusStopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusStopTests.m; sourceTree = "<group>"; };
+		1FA8AB101B164C6B00276AB7 /* BusStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStop.h; sourceTree = "<group>"; };
+		1FA8AB111B164C6B00276AB7 /* BusStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				1FA8AAEF1B16490D00276AB7 /* AppDelegate.m */,
 				1FA8AAF11B16490D00276AB7 /* ViewController.h */,
 				1FA8AAF21B16490D00276AB7 /* ViewController.m */,
+				1FA8AB101B164C6B00276AB7 /* BusStop.h */,
+				1FA8AB111B164C6B00276AB7 /* BusStop.m */,
 				1FA8AAF41B16490D00276AB7 /* Main.storyboard */,
 				1FA8AAF71B16490D00276AB7 /* Images.xcassets */,
 				1FA8AAF91B16490D00276AB7 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				1FA8AAF31B16490D00276AB7 /* ViewController.m in Sources */,
 				1FA8AAF01B16490D00276AB7 /* AppDelegate.m in Sources */,
 				1FA8AAED1B16490D00276AB7 /* main.m in Sources */,
+				1FA8AB121B164C6B00276AB7 /* BusStop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
