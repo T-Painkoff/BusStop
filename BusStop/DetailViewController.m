@@ -16,13 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.nameLabel.text = [self.dictionary objectForKey:@"cta_stop_name"];
+    self.routesLabel.text = [self.dictionary objectForKey:@"routes"];
+    self.addressLabel.text = [self.dictionary objectForKey:@"_address"];
+    self.transferLabel.text = [self.dictionary objectForKey:@"inter_modal"];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
+
+
+
 
 /*
 #pragma mark - Navigation

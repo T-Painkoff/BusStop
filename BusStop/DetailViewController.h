@@ -10,4 +10,11 @@
 
 @interface DetailViewController : UIViewController
 
+@property NSDictionary *dictionary;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *routesLabel;
+@property (weak, nonatomic)  IBOutlet UILabel *addressLabel;
+@property (weak, nonatomic)  IBOutlet UILabel *transferLabel;
+
+
 @end

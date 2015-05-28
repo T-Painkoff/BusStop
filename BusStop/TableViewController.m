@@ -7,8 +7,7 @@
 //
 
 #import "TableViewController.h"
-
-
+#import "DetailViewController.h"
 
 @implementation TableViewController
 
@@ -41,17 +40,22 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"busCell"];
     NSDictionary *stop = [self.busStop objectAtIndex:indexPath.row];
     cell.textLabel.text = [stop objectForKey:@"cta_stop_name"];
+    cell.detailTextLabel.text = [stop objectForKey:@"routes"];
+   
 
     return cell;
 }
 
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.path = indexPath;
 }
-*/
 
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(NSDictionary*)sender{
+
+    DetailViewController *detailVC = [segue destinationViewController];
+    detailVC.dictionary = [self.busStop objectAtIndex:self.path.row];
+
+
+}
 @end

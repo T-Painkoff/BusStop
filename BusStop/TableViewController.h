@@ -12,6 +12,8 @@
 @property NSArray *busStop;
 
 @property (weak,nonatomic) IBOutlet UITableView *busStopTableView;
+@property NSIndexPath *path;
+
 
 @end
 
